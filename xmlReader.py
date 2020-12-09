@@ -13,12 +13,15 @@ input = '''<outer>
   </users>
 </outer>'''
 
-users = ET.fromstring(input)
-lst = users.findall('users/user')
+try:
+  users = ET.fromstring(input)
+  lst = users.findall('users/user')
 
-print('User count:', len(lst))
+  print('User count:', len(lst))
 
-for item in lst:
-  print("name:", item.find('name').text)
-  print("id:", item.find('id').text)
-  print("Attributes", item.get("x"))
+  for item in lst:
+    print("name:", item.find('name').text)
+    print("id:", item.find('id').text)
+    print("Attributes", item.get("x"))
+except:
+  print('Error')
