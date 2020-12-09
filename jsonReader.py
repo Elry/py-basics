@@ -16,6 +16,6 @@ data = '''
 
 try:
   info = json.loads(data)
-  print(info[0]['name'])
+  print(info[0]['name'] + " vs " + info[1]['name'])
 except:
   print('Error')
