@@ -1,8 +1,7 @@
-""" Multiline strings can be written
-    like this
-"""
-
 ## math
+import json
+import math
+
 5 / 3
 5 // 3 # rounds
 
@@ -23,6 +22,7 @@ b = a
 a is b # checks if both refer to the same object
 
 ## strings
+name = 'Hitoshura'
 "a" + "b" # concat
 "a" "b" # also concats
 "abc"[0] # a, since strings are also array of chars
@@ -58,6 +58,7 @@ li[:3] # start from 0 and stop at 3
 li[::2] # show every second entry
 li[::-1] # show in reverse order
 
+o_li = [4,5,6]
 del li[2] # rm specific elementS of a list
 li.remove[2] # rm the first occurence of a value
 li.insert(1,2) # insert element at specific index
@@ -90,6 +91,7 @@ e.setdefault("d", 4)
 e.update({"e", 4})
 del e["e"]
 
+s_var = 1
 ## conditionals
 if s_var > 10:
   print("bigger")
@@ -107,11 +109,11 @@ for i in range(4):
   print(i)
 
 # range(start, end)
-for i in range(4,8)
+for i in range(4,8):
   print(i)
 
 # range(start, end, step)
-for i in range(4,20,2)
+for i in range(4,20,2):
   print(i)
 
 # prints both index and value when interating through a list
@@ -162,10 +164,11 @@ def add(x,y):
   return x + y
 add(2,3)
 
-def swap(x,y)
+def swap(x,y):
   return y, x # the return is a tuple
 
-global a = 2
+global aGlobal
+aGlobal = 2
 
 (lambda x: x > 2)(3)
 

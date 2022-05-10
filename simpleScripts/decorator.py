@@ -5,13 +5,13 @@ def beg(target_function):
   def wrapper(*args, **kwargs):
     msg, say_please = target_function(*args, **kwargs)
     if say_please:
-      return "{} {}".format(msg, 'poor...')
+      return "{} {}".format(msg, '...')
     return msg
   return wrapper
 
 @beg
 def say(say_please=False):
-  msg = "can u?"
+  msg = "could u?"
   return msg, say_please
 
 print(say())

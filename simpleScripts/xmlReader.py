@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 
-input = '''<outer>
+input = '''
+<outer>
   <users>
     <user x="0">
       <id>001</id>
@@ -11,7 +12,8 @@ input = '''<outer>
       <name>Morgoth</name>
     </user>
   </users>
-</outer>'''
+</outer>
+'''
 
 try:
   users = ET.fromstring(input)

@@ -19,7 +19,7 @@ facts = []
 for i in range(10):
   facts.append(factorial(i))
 
-plt.semilogy(facts,label="factorial")
+plt.semilogy(facts,label="Factorial")
 plt.semilogy(fibs,label="Fibonacci")
 plt.xlabel("n")
 plt.legend()

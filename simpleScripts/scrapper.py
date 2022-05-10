@@ -9,4 +9,4 @@ try:
 
   print(soup.prettify())
 except:
-  print("err")
+  print("Scrapping error")
