@@ -32,7 +32,6 @@ class Human:
   def age(self):
     del self._age
 
-
 if __name__ == '__main__':
   a = Human(name="aga")
   a.say('ayy')
