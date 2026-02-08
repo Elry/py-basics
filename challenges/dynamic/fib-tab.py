@@ -1,0 +1,15 @@
+def fibo(n):
+    dp = [0] * (n + 1)
+
+    # Storing the independent values in dp
+    dp[0] = 0
+    dp[1] = 1
+
+    # Using the bottom-up approach
+    for i in range(2, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+    
+    return dp[n]
+
+n = 5
+print(fibo(n))
